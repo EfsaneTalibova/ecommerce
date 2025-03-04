@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+.discount_text{
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+    background-color: #DB4444;
+    color: #FFFFFF;
+}
+.discount_text span{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0px; 
+}
+.navigator{
+    display: flex;
+    list-style-type: none;
+}
+.navigator li{
+    margin-right: 48px;
+}
