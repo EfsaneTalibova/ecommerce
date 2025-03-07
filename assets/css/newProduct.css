@@ -1,0 +1,18 @@
+.newProduct {
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newProduct-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.img-thumbnail {
+    max-width: 100px;
+    height: auto;
+}

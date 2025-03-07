@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-thumbnail {
+    max-width: 100px;
+    height: auto;
+}

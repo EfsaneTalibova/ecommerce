@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Form məlumatlarını FormData ilə götürürük
         const formData = new FormData(form);
-        const userData = Object.fromEntries(formData.entries()); // FormData-nı obyektə çeviririk
+        const userData = Object.fromEntries(formData.entries()); // FormData-dan obyektə çeviririk
 
         // Əgər hansısa input boşdursa, xəbərdarlıq göstəririk
         if (Object.values(userData).some(value => value.trim() === "")) {
@@ -26,8 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        // Yeni istifadəçiyə unikal ID veririk
+        const newUser = {
+            id: Date.now(), // ID unikal olması üçün timestamp istifadə edilir
+            ...userData
+        };
+
         // Yeni istifadəçini array-ə əlavə edirik və `localStorage`-da saxlayırıq
-        users.push(userData);
+        users.push(newUser);
         localStorage.setItem("users", JSON.stringify(users));
 
         showMessage("Account created successfully!", "success");
