@@ -1,10 +1,10 @@
-body {
-    background-color: #f8f8f8;
+.product {
+    /* background-color: #f8f8f8; */
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    max-width: 1000px;
+.product-container {
+    max-width: 1200px;
     margin: auto;
 }
 
