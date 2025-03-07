@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #db4444;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Poppins", sans-serif;
+  }
+  .header{
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 45px;
+  }
+  .discount_text {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+  .discount_text span {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .pt-45{
+    padding-top: 45px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 90px;
+  }
+  .navigator {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0px;
+
+  }
+  .navigator li {
+    margin-right: 48px;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .primary_btn {
+    background-color: var(--primary-color);
+    padding: 5px 18px;
+    border-radius: 5px;
+    border: none;
+    color: #fafafa;
+    font-size: 12px;
+  }
+  
+  .whatAreYouLookingFor {
+    border-radius: 5px;
+    padding: 5px 18px;
+    background-color: #f5f5f5;
+    border: none;
+    margin-right: 5px;
+  }
+  .nav_icons i {
+    margin-right: 5px;
+  }
+  .username {
+    margin: 0px 5px;
+  }
+  .mlr-standart {
+    margin: 45px 90px;
+  }
+  .plr-standart {
+    padding: 0px 90px;
+  }
+
+  .header a{
+    text-decoration: none;
+    color: #000000;
+  }

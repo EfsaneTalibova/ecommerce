@@ -16,36 +16,41 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="discount">
         <p class="discount_text">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           <span>ShopNow</span>
         </p>
       </div>
-      <nav class="mlr-standart">
+      <nav class="pt-45">
         <div class="logo">E-commerce</div>
         <ul class="navigator">
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About</li>
-          <li>Sign Up</li>
-          <li class="primary_btn">Shop</li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          <li class="primary_btn"><a href="">Shop</a></li>
         </ul>
+        <input type="text" class="whatAreYouLookingFor" placeholder="What are you looking for?"></input>
         <div class="nav_icons">
-          <button class="whatAreYouLookingFor">
-            What are you looking for?
-          </button>
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-cart-shopping"></i>
           <i class="fa-regular fa-user"></i>
           <span class="username">username</span>
-          <button class="primary_btn">log out</button>
         </div>
+        <button class="primary_btn logout-btn">
+          <a href="./index.html">log out</a>
+        </button>
+        <button class="primary_btn login-btn">
+          <a href="./login.html">log in</a>
+        </button>
       </nav>
     </header>
     <main>
@@ -127,7 +132,7 @@
           </h3>
           <h2 class="section-header-text">Shop Collection</h2>
         </div>
-        <div class="promotion-section_container mlr-standart">
+        <div class="promotion-section_container">
           <div class="category headband">
             <h2>Headband</h2>
             <a href="#">Collection →</a>
@@ -145,7 +150,7 @@
         </div>
       </section>
       <section>
-        <div class="section-header mlr-standart ">
+        <div class="section-header mlr-standart">
           <h3 class="section_header-primary">
             <span class="section-header_primary-box"></span>
             <span> Featured</span>
@@ -167,19 +172,27 @@
             <p class="promo-expiry">Offer expires in:</p>
             <div class="countdown">
               <div class="time-box">
-                <span id="days">02</span>
+                <div class="time">
+                  <span id="days">02</span>
+                </div>
                 <p>Days</p>
               </div>
               <div class="time-box">
-                <span id="hours">12</span>
+                <div class="time">
+                  <span id="hours">12</span>
+                </div>
                 <p>Hours</p>
               </div>
               <div class="time-box">
-                <span id="minutes">45</span>
+                <div class="time">
+                  <span id="minutes">45</span>
+                </div>
                 <p>Minutes</p>
               </div>
               <div class="time-box">
-                <span id="seconds">05</span>
+                <div class="time">
+                  <span id="seconds">05</span>
+                </div>
                 <p>Seconds</p>
               </div>
             </div>
@@ -188,8 +201,187 @@
           </div>
         </div>
       </section>
+      <section class="specialPromotion">
+        <div class="section-header mlr-standart">
+          <h3 class="section_header-primary">
+            <span class="section-header_primary-box"></span>
+            <span> Featured</span>
+          </h3>
+          <h2 class="section-header-text">Promotion</h2>
+        </div>
+        <div class="specialPromotion_container plr-standart">
+          <div class="text-section">
+            <h4 class="tagline">Pro. Beyond.</h4>
+            <h1 class="title">iPhone 14 <span>Pro</span></h1>
+            <p class="description">
+              Created to change everything for the better. For everyone
+            </p>
+            <a href="#" class="shop-button">Shop Now</a>
+          </div>
+          <div class="image-section">
+            <img
+              src="./images/home/specialPromotion-section/Iphone Image.png"
+              alt="iPhone 14 Pro"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="feedbackCorner">
+        <div class="feedbackCorner_container">
+          <h2 class="title mlr-standart">Feedback Corner</h2>
+          <div class="feedback-section">
+            <div class="feedback-card">
+              <span class="quote">❝</span>
+              <h3 class="name">Emily Wilson</h3>
+              <p class="feedback-text">
+                The customer experience was exceptional from start to finish.
+                The website is user-friendly, the checkout process was smooth,
+                and the clothes I ordered fit perfectly. I'm beyond satisfied!
+              </p>
+            </div>
+            <div class="feedback-card highlighted">
+              <span class="quote">❝</span>
+              <h3 class="name">Sarah Thompson</h3>
+              <p class="feedback-text">
+                I absolutely love the quality and style of the clothing I
+                purchased from this website. Customer service was outstanding,
+                and I received my order quickly. Highly recommended!
+              </p>
+            </div>
+            <div class="feedback-card">
+              <span class="quote">❝</span>
+              <h3 class="name">Olivia Martinez</h3>
+              <p class="feedback-text">
+                I had a great experience shopping on this website. The clothes I
+                bought are fashionable and comfortable. Highly satisfied!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ourProducts">
+        <div class="ourProducts_container">
+          <div class="section-header mlr-standart">
+            <h3 class="section_header-primary">
+              <span class="section-header_primary-box"></span>
+              <span> Our Products</span>
+            </h3>
+            <h2>Explore Our Products</h2>
+          </div>
+          <div class="product-grid">
+            <div class="ourProduct-card">
+              <img
+                src="./images/home/ourProducts/saat.png "
+                alt="Popular Products"
+              />
+              <h3>Popular Products</h3>
+              <p>
+                iPad combines a magnificent 10.2-inch Retina display, incredible
+                performance, multitasking and ease of use.
+              </p>
+              <a href="#" class="shop-button">Shop Now</a>
+            </div>
+            <div class="ourProduct-card ourProduct-card-2">
+              <img src="./images/home/ourProducts/tablet.png" alt="iPad Pro" />
+              <h3>iPad Pro</h3>
+              <p>
+                iPad combines a magnificent 10.2-inch Retina display, incredible
+                performance, multitasking and ease of use.
+              </p>
+              <a href="#" class="shop-button">Shop Now</a>
+            </div>
+            <div class="ourProduct-card ourProduct-card-3">
+              <img
+                src="./images/home/ourProducts/tel.png"
+                alt="Samsung Galaxy"
+              />
+              <h3>Samsung Galaxy</h3>
+              <p>
+                iPad combines a magnificent 10.2-inch Retina display, incredible
+                performance, multitasking and ease of use.
+              </p>
+              <a href="#" class="shop-button">Shop Now</a>
+            </div>
+            <div class="ourProduct-card dark-card">
+              <img
+                src="./images/home/ourProducts/Macbook 1.png"
+                alt="Macbook Pro"
+              />
+              <h3>Macbook Pro</h3>
+              <p>
+                iPad combines a magnificent 10.2-inch Retina display, incredible
+                performance, multitasking and ease of use.
+              </p>
+              <a href="#" class="shop-button">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Exclusive</h3>
+          <p class="footer-subtitle">Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Enter your email" />
+            <button><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Support</h3>
+          <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <p>exclusive@gmail.com</p>
+          <p>+88015-88888-9999</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Download App</h3>
+          <p>Save $3 with App New User Only</p>
+          <div class="app-links">
+            <img src="./images/footer/Qr Code.png" alt="QR Code" />
+            <div class="store-links">
+              <img src="./images/footer/GooglePlay.png" alt="Google Play" />
+              <img src="./images/footer/AppStore.png" alt="App Store" />
+            </div>
+          </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright Rimel 2022. All rights reserved</p>
+      </div>
+    </footer>
+
     <script
       src="https://kit.fontawesome.com/60542639e2.js"
       crossorigin="anonymous"
@@ -199,5 +391,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>

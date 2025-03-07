@@ -1,2 +1,0 @@
-# ecommerce
- Developia final project
