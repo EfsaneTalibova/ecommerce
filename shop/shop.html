@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/shop.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="discount">
+          <p class="discount_text">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <span>ShopNow</span>
+          </p>
+        </div>
+        <nav class="pt-45">
+          <div class="logo">E-commerce</div>
+          <ul class="navigator">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li id="signup"><a  href="../signup/signup.html">Sign Up</a></li>
+            <li class="primary_btn"><a href="../shop/shop.html" class="text-white">Shop</a></li>
+          </ul>
+          <input type="text" class="whatAreYouLookingFor" placeholder="What are you looking for?"></input>
+          <div class="nav_icons">
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            <a href="../activeUser/activeUser.html"><i class="fa-regular fa-user"></i></a> 
+            <span class="username">username</span>
+          </div>
+          <button class="primary_btn logout-btn">
+            <a href="../index.html" class="text-white">log out</a>
+          </button>
+          <button class="primary_btn login-btn">
+            <a href="../login/login.html" class="text-white">log in</a>
+          </button>
+        </nav>
+      </header>
+    <main>
+        <section class="shopSection">
+            <div class="shopSection-container mt-4">
+                <h2>Shop</h2>
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-md-3">
+                        <input type="text" id="search" class="form-control mb-3" placeholder="Search">
+                        
+                        <h5>Category</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="category-filter" data-category="All">All</a></li>
+                            <li><a href="#" class="category-filter" data-category="Clothing">Clothing</a></li>
+                            <li><a href="#" class="category-filter" data-category="Footwear">Footwear</a></li>
+                            <li><a href="#" class="category-filter" data-category="Accessories">Accessories</a></li>
+                            <li><a href="#" class="category-filter" data-category="Tablets">Tablets</a></li>
+                        </ul>
+        
+                        <h5>Rate</h5>
+                        <div id="ratingFilter">
+                            <span class="rating-filter" data-rating="5">⭐⭐⭐⭐⭐</span><br>
+                            <span class="rating-filter" data-rating="4">⭐⭐⭐⭐</span><br>
+                            <span class="rating-filter" data-rating="3">⭐⭐⭐</span><br>
+                            <span class="rating-filter" data-rating="2">⭐⭐</span><br>
+                            <span class="rating-filter" data-rating="1">⭐</span>
+                        </div>
+                    </div>
+        
+                    <!-- Product List -->
+                    <div class="col-md-9">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-danger" id="showAllProducts">All products</button>
+                            <select id="sortProducts" class="form-select w-auto">
+                                <option value="default">Sort by</option>
+                                <option value="priceAsc">Price: Low to High</option>
+                                <option value="priceDesc">Price: High to Low</option>
+                                <option value="rating">Rating</option>
+                            </select>
+                        </div>
+        
+                        <div class="row mt-3" id="productList">
+                            <!-- Products will be loaded dynamically here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Exclusive</h3>
+                <p class="footer-subtitle">Subscribe</p>
+                <p>Get 10% off your first order</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+  
+            <div class="footer-section">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login / Register</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+  
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+  
+            <div class="footer-section">
+                <h3>Download App</h3>
+                <p>Save $3 with App New User Only</p>
+                <div class="app-links">
+                    <img src="./images/footer/Qr Code.png" alt="QR Code">
+                    <div class="store-links">
+                        <img src="./images/footer/GooglePlay.png" alt="Google Play">
+                        <img src="./images/footer/AppStore.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright Rimel 2022. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+    <script src="./shop.js"></script>
+    <script src="https://kit.fontawesome.com/60542639e2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

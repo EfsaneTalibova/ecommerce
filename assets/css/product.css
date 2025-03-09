@@ -1,0 +1,24 @@
+.productSection {
+    font-family: 'Poppins', sans-serif;
+}
+
+.productSection-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.rating {
+    color: gold;
+}
+
+.border {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+.img-fluid{
+    max-width: 300px;
+}
+.productSection-header{
+    margin-bottom: 70px;
+}

@@ -1,0 +1,40 @@
+.cartSection {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cartSection-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.table img {
+    max-width: 80px;
+    border-radius: 5px;
+}
+
+.cart-summary {
+    background: white;
+    border-radius: 10px;
+}
+
+.btn-remove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    background-color: darkred;
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}

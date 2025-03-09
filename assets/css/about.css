@@ -1,0 +1,55 @@
+.aboutMain {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.aboutMain-container {
+  max-width: 1100px;
+  margin: auto;
+}
+.mb-160{
+    margin-bottom: 160px;
+}
+/* Team Section */
+.team-section {
+  margin-top: 50px;
+}
+
+.team-member {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.team-member img {
+  width: 300px;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.team-member h4 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.team-member p {
+  color: gray;
+}
+
+.team-member .social-icons i {
+  margin: 10px 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.team-member:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Image */
+.img-fluid {
+  max-width: 100%;
+  border-radius: 10px;
+}

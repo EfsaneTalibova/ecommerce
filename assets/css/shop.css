@@ -1,0 +1,65 @@
+.shopSection {
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopSection-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-unstyled a:hover {
+    text-decoration: underline;
+}
+
+.rating-filter {
+    cursor: pointer;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    height: 100px;
+    border-radius: 8px;
+}
+
+.product-card h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.product-card .price {
+    color: red;
+    font-weight: bold;
+}
+
+.product-card .rating {
+    color: gold;
+}
+
+.btn-add-to-cart {
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add-to-cart:hover {
+    background: gray;
+}

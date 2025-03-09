@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // 2 saniyə sonra ana səhifəyə yönləndiririk
             setTimeout(() => {
-                window.location.href = "./index.html";
+                window.location.href = "/index.html";
             }, 2000);
         } else {
             showMessage("Invalid username or password!", "danger");

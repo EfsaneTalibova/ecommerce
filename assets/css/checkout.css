@@ -1,0 +1,22 @@
+.checkoutSection {
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkoutSection-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+hr {
+    border-top: 1px solid #ddd;
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
