@@ -1,40 +1,50 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("login-form");
-    const messageBox = document.getElementById("message-box"); // Xəbərdarlıq mesajı üçün div
+  const form = document.getElementById("login-form");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Formun default submit olmasını bloklayırıq
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Formun default submit olmasını bloklayırıq
 
-        // Form məlumatlarını FormData ilə götürürük
-        const formData = new FormData(form);
-        const loginData = Object.fromEntries(formData.entries()); // FormData-dan obyektə çeviririk
+    // Form məlumatlarını FormData ilə götürürük
+    const formData = new FormData(form);
+    const loginData = Object.fromEntries(formData.entries()); // FormData-dan obyektə çeviririk
 
-        // `localStorage`-da istifadəçi məlumatlarını əldə edirik
-        let users = JSON.parse(localStorage.getItem("users")) || [];
-
-        // Uyğun istifadəçini axtarırıq
-        const foundUser = users.find(user => user.username === loginData.username && user.password === loginData.password);
-
-        if (foundUser) {
-            // İstifadəçini aktiv olaraq `localStorage`-da saxlayırıq
-            localStorage.setItem("activeUser", JSON.stringify(foundUser));
-
-            showMessage("Login successful! Redirecting...", "success");
-
-            // 2 saniyə sonra ana səhifəyə yönləndiririk
-            setTimeout(() => {
-                window.location.href = "/index.html";
-            }, 2000);
-        } else {
-            showMessage("Invalid username or password!", "danger");
-        }
-    });
-
-    // Xəbərdarlıq mesajını göstərən funksiya
-    function showMessage(message, type) {
-        messageBox.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
-        setTimeout(() => {
-            messageBox.innerHTML = "";
-        }, 3000); // 3 saniyə sonra mesaj silinir
-    }
+    loginFunc(loginData);
+  });
 });
+
+// Xəbərdarlıq mesajını göstərən funksiya
+function showMessage(message, type) {
+  const messageBox = document.getElementById("message-box"); // Xəbərdarlıq mesajı üçün div
+
+  messageBox.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+  setTimeout(() => {
+    messageBox.innerHTML = "";
+  }, 3000);
+}
+
+function loginFunc(user) {
+  fetch("http://195.26.245.5:9505/api/auth", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(user),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      if (data.status != 403) {
+        showMessage("Login successful! Redirecting...", "success");
+      }else{
+          showMessage("Invalid username or password!", "danger");
+      }
+    
+      localStorage.setItem("activeUser",JSON.stringify(data.body))
+    //   2 saniyə sonra ana səhifəyə yönləndiririk
+        setTimeout(() => {
+          window.location.href = "/index.html";
+        }, 2000);
+    })
+}
+
+// "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJFbHZpbkFsaXlldiIsImlhdCI6MTc0NzIxOTgzMCwiZXhwIjoxNzQ5ODExODMwfQ.LcqF0rBhuVou5xjhGSmmjzFHB4QOvdgFg4oQl-4IqcE"
